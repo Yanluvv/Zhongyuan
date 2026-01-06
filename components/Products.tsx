@@ -108,7 +108,7 @@ const Products: React.FC = () => {
                         <Bar dataKey="valEC" name={t.tech.ecTitle} fill="#16a34a" radius={[0, 4, 4, 0]} barSize={20} >
                           {
                             t.tech.comparison.map((entry, index) => (
-                              <Cell key={`cell-${index}`} fill={index === 2 ? '#2563eb' : '#16a34a'} />
+                              <Cell key={`cell-${index}`} fill={index === t.tech.comparison.length - 1 ? '#2563eb' : '#16a34a'} />
                             ))
                           }
                         </Bar>

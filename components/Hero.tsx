@@ -21,11 +21,7 @@ const Hero: React.FC = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <Reveal width="100%">
-           <div className="mb-4 inline-block px-4 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
-             <span className="text-sm font-medium tracking-wider uppercase">Future of Energy</span>
-           </div>
-        </Reveal>
+        {/* Badge removed */}
         
         <Reveal width="100%" delay={0.3}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">

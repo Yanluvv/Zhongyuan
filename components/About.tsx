@@ -20,10 +20,7 @@ const About: React.FC = () => {
                 alt="Office Building" 
                 className="rounded-xl shadow-2xl"
               />
-              <div className="absolute bottom-6 right-6 bg-white p-6 rounded-lg shadow-xl max-w-xs hidden md:block">
-                 <p className="text-blue-900 font-bold text-lg mb-1">2018</p>
-                 <p className="text-gray-500 text-sm">Founded in China R&D Department</p>
-              </div>
+              {/* Overlay box removed */}
             </div>
           </Reveal>
 

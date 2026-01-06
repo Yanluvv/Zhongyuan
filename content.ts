@@ -62,11 +62,12 @@ export const content: Record<'zh' | 'en', ContentData> = {
       comparison: [
         { label: "电机效率", valAC: 87, valEC: 93, unit: "%" },
         { label: "传动效率", valAC: 95, valEC: 100, unit: "%" },
+        { label: "叶轮效率", valAC: 60, valEC: 79, unit: "%" },
         { label: "系统总效率", valAC: 50, valEC: 71, unit: "%" }
       ]
     },
     cases: {
-      title: "项目案例具体数据",
+      title: "部分案例数据展示",
       items: [
         {
           client: "长鑫存储",
@@ -102,11 +103,11 @@ export const content: Record<'zh' | 'en', ContentData> = {
     },
     customization: {
       title: "方案定制",
-      managerLabel: "总经理",
-      manager: "史总",
+      managerLabel: "销售工程师",
+      manager: "史工",
       phoneLabel: "手机",
       phone: "189 5321 5158",
-      qrAlt: "微信二维码"
+      qrAlt: "扫码添加，定制方案"
     }
   },
   en: {
@@ -170,11 +171,12 @@ export const content: Record<'zh' | 'en', ContentData> = {
       comparison: [
         { label: "Motor Efficiency", valAC: 87, valEC: 93, unit: "%" },
         { label: "Drive Efficiency", valAC: 95, valEC: 100, unit: "%" },
+        { label: "Impeller Efficiency", valAC: 60, valEC: 79, unit: "%" },
         { label: "System Efficiency", valAC: 50, valEC: 71, unit: "%" }
       ]
     },
     cases: {
-      title: "Success Stories",
+      title: "Selected Case Data",
       items: [
         {
           client: "Changxin Memory (CXMT)",
@@ -210,11 +212,11 @@ export const content: Record<'zh' | 'en', ContentData> = {
     },
     customization: {
       title: "Custom Solutions",
-      managerLabel: "GM",
-      manager: "Mr. Shi",
+      managerLabel: "Sales Engineer",
+      manager: "Eng. Shi",
       phoneLabel: "Mobile",
       phone: "+86 189 5321 5158",
-      qrAlt: "WeChat QR"
+      qrAlt: "Scan to Customize"
     }
   }
 };
