@@ -12,8 +12,7 @@ const Hero: React.FC = () => {
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          // Updated to a factory workshop environment (Industrial floor/Machinery)
-          backgroundImage: 'url("https://www.infinair.com.cn/uploads/202403/26/3beca3bf248f9cfb.webp")',
+          backgroundImage: 'url("https://drive.google.com/thumbnail?id=1mLPNkfQLFFz5_gGB6SeXQS-9KeWTE4Lp&sz=w2560")',
         }}
       >
         {/* Reduced opacity from 90/80 to 60/50 to make background clearer */}

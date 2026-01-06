@@ -61,4 +61,12 @@ export interface ContentData {
     phone: string;
     copyright: string;
   };
+  customization: {
+    title: string;
+    managerLabel: string;
+    manager: string;
+    phoneLabel: string;
+    phone: string;
+    qrAlt: string;
+  };
 }

@@ -99,6 +99,14 @@ export const content: Record<'zh' | 'en', ContentData> = {
       phoneLabel: "电话",
       phone: "0551-65661186",
       copyright: "© 2024 安徽中源智慧节能科技有限公司 版权所有"
+    },
+    customization: {
+      title: "方案定制",
+      managerLabel: "总经理",
+      manager: "史总",
+      phoneLabel: "手机",
+      phone: "189 5321 5158",
+      qrAlt: "微信二维码"
     }
   },
   en: {
@@ -199,6 +207,14 @@ export const content: Record<'zh' | 'en', ContentData> = {
       phoneLabel: "Phone",
       phone: "0551-65661186",
       copyright: "© 2024 Anhui Zhongyuan Smart Energy Conservation Technology Co., Ltd."
+    },
+    customization: {
+      title: "Custom Solutions",
+      managerLabel: "GM",
+      manager: "Mr. Shi",
+      phoneLabel: "Mobile",
+      phone: "+86 189 5321 5158",
+      qrAlt: "WeChat QR"
     }
   }
 };

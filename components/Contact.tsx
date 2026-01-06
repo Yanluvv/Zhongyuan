@@ -1,6 +1,23 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { MapPin, Phone, Mail, ArrowUpRight } from 'lucide-react';
+import { MapPin, Phone, Mail, User, Smartphone, LucideIcon } from 'lucide-react';
+
+interface ContactRowProps {
+  icon: LucideIcon;
+  label: string;
+  value: string;
+  minHeight?: string;
+}
+
+const ContactRow: React.FC<ContactRowProps> = ({ icon: Icon, label, value, minHeight = "min-h-[5rem]" }) => (
+  <div className={`flex items-start gap-4 ${minHeight}`}>
+     <Icon className="text-blue-500 mt-1 flex-shrink-0" size={20} />
+     <div>
+       <p className="text-sm text-gray-500 mb-1">{label}</p>
+       <p className="text-base text-gray-300">{value}</p>
+     </div>
+  </div>
+);
 
 const Contact: React.FC = () => {
   const { t } = useLanguage();
@@ -11,7 +28,7 @@ const Contact: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
-          {/* Brand */}
+          {/* Brand - Spans 2 columns on desktop */}
           <div className="lg:col-span-2">
              <div className="flex items-center gap-2 mb-6">
                 {!imgError ? (
@@ -31,30 +48,37 @@ const Contact: React.FC = () => {
              <p className="text-gray-400 max-w-md mb-8 text-base">
                {t.hero.subtitle}
              </p>
-             <button className="flex items-center gap-2 text-white border-b border-blue-500 pb-1 hover:text-blue-400 transition-colors">
-               Get in touch <ArrowUpRight size={16} />
-             </button>
+
+             {/* QR Code Section moved here */}
+             <div className="flex flex-col gap-3">
+               <div className="bg-white p-1 rounded-lg w-fit">
+                 <img 
+                   src="https://drive.google.com/thumbnail?id=1Q7w_ka_LRvhpUxFAJgf4-LG-MEdSa94s&sz=w500" 
+                   alt={t.customization.qrAlt}
+                   className="w-32 h-32"
+                 />
+               </div>
+               <p className="text-sm text-gray-400 ml-1">{t.customization.qrAlt}</p>
+             </div>
           </div>
 
-          {/* Contact Info */}
-          <div className="lg:col-span-2 space-y-6">
-            <h4 className="text-lg font-semibold">{t.contact.title}</h4>
+          {/* Contact Info - Spans 1 column */}
+          <div className="space-y-6">
+            <h4 className="text-lg font-semibold h-7">{t.contact.title}</h4>
             
-            <div className="flex items-start gap-4">
-               <MapPin className="text-blue-500 mt-1 flex-shrink-0" size={20} />
-               <div>
-                 <p className="text-sm text-gray-500 mb-1">{t.contact.addressLabel}</p>
-                 <p className="text-base text-gray-300">{t.contact.address}</p>
-               </div>
-            </div>
+            <ContactRow 
+              icon={MapPin} 
+              label={t.contact.addressLabel} 
+              value={t.contact.address} 
+              minHeight="min-h-[5rem]" /* Height to handle multi-line address and align with Manager */
+            />
 
-            <div className="flex items-start gap-4">
-               <Phone className="text-blue-500 mt-1 flex-shrink-0" size={20} />
-               <div>
-                 <p className="text-sm text-gray-500 mb-1">{t.contact.phoneLabel}</p>
-                 <p className="text-base text-gray-300">{t.contact.phone}</p>
-               </div>
-            </div>
+            <ContactRow 
+              icon={Phone} 
+              label={t.contact.phoneLabel} 
+              value={t.contact.phone}
+              minHeight="min-h-[5rem]" /* Align with Mobile */
+            />
             
             <div className="flex items-start gap-4">
                <Mail className="text-blue-500 mt-1 flex-shrink-0" size={20} />
@@ -64,6 +88,26 @@ const Contact: React.FC = () => {
                </div>
             </div>
           </div>
+
+          {/* Solution Customization - Spans 1 column */}
+          <div className="space-y-6">
+            <h4 className="text-lg font-semibold h-7">{t.customization.title}</h4>
+            
+            <ContactRow 
+              icon={User} 
+              label={t.customization.managerLabel} 
+              value={t.customization.manager}
+              minHeight="min-h-[5rem]"
+            />
+
+            <ContactRow 
+              icon={Smartphone} 
+              label={t.customization.phoneLabel} 
+              value={t.customization.phone}
+              minHeight="min-h-[5rem]"
+            />
+          </div>
+
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
