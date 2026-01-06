@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
              <div className="flex items-center gap-2 mb-6">
                 {!imgError ? (
                   <img 
-                    src="http://photogzmaz.photo.store.qq.com/psc?/V50dY8al36d9Cr4DUiSB0rIzqu2TNCtr/TmEUgtj9EK6.7V8ajmQrEJHUeldEzWsiCoUVVRJ9bFN*o5KJjeRCfSDdotnIa.wfSldzotj0oEykpVdnI6AMgaqpPs5CZsoFrVvJvxYkO4Q!/b&bo=kgCSAJIAkgADFzI!&rf=viewer_4&t=5" 
+                    src="https://drive.google.com/thumbnail?id=1iPkIKtJDABtNZ6a1lus8NeEVU-ZPB9v7&sz=w1000" 
                     alt="Logo" 
                     className="h-8 w-auto object-contain"
                     onError={() => setImgError(true)}
