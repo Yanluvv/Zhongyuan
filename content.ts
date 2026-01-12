@@ -35,12 +35,12 @@ export const content: Record<'zh' | 'en', ContentData> = {
         },
         {
           title: "节能率高",
-          desc: "平均节能率30%+，最高可达60%以上，市面上鲜有同类业务。",
+          desc: "平均节能率30%以上，最高可达60%。",
           icon: "TrendingUp"
         },
         {
           title: "回收期短",
-          desc: "一般情况两到三年即可收回成本，符合绝大多数客户投资标准。",
+          desc: "通常两到三年即可收回成本，符合绝大多数客户投资标准。",
           icon: "Clock"
         }
       ]
