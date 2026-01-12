@@ -11,13 +11,13 @@ export const content: Record<'zh' | 'en', ContentData> = {
     },
     hero: {
       title: "安徽中源智慧节能科技有限公司",
-      subtitle: "空调箱EC风机节能改造创领者，综合能源整体解决方案服务商",
+      subtitle: "空调箱EC风机节能改造创领者",
       cta: "探索解决方案"
     },
     about: {
       title: "公司简介",
-      description: "安徽中源智慧节能科技有限公司是安徽省唯一专注于空调箱EC风机节能改造的服务商。该节能产品由公司股东在上海首创，而后推广至安徽，短短一年时间即与安徽多家龙头企业达成合作。服务行业覆盖洁净厂房（半导体、面板、锂电）、商业办公及公共建筑。",
-      tags: ["安徽省唯一", "多行业覆盖", "上海首创技术", "龙头企业合作"]
+      description: "中源节能为安徽省唯一一家专注于空调箱EC风机节能改造的节能服务商，该节能产品由公司股东在上海验证并推广后，在合肥成立中源节能承接安徽地区业务，目前已与多家龙头企业达成合作。",
+      tags: ["安徽省唯一", "多行业覆盖", "国内技术领先", "龙头企业合作"]
     },
     features: {
       title: "业务优势",
@@ -25,7 +25,7 @@ export const content: Record<'zh' | 'en', ContentData> = {
       items: [
         {
           title: "原理简单",
-          desc: "高效风机替换低效风机，纯粹的物理能效提升，客户一听就懂。",
+          desc: "高效风机替换低效风机，纯粹的物理能效提升。",
           icon: "Zap"
         },
         {
@@ -50,48 +50,42 @@ export const content: Record<'zh' | 'en', ContentData> = {
       acTitle: "传统AC风机",
       ecTitle: "新一代EC风机",
       acDesc: [
-        "异步感应电机，效率较低（<87%）",
+        "异步感应电机，效率低、寿命一般",
         "依赖变频器调速，低速效率衰减明显",
-        "皮带传动，维护成本高，有粉尘污染"
+        "传动部件多，故障率高，需要定期维保"
       ],
       ecDesc: [
-        "永磁同步电机，效率极高（>90%）",
-        "内置控制器，10-100%无级调速",
-        "无电刷设计，寿命长，免维护"
+        "直流无刷永磁同步电机，效率高、寿命长",
+        "自带调速功能，支持10-100%无级调速",
+        "外转子马达直连高效叶轮，无需传动"
       ],
       comparison: [
         { label: "电机效率", valAC: 87, valEC: 93, unit: "%" },
         { label: "传动效率", valAC: 95, valEC: 100, unit: "%" },
         { label: "叶轮效率", valAC: 60, valEC: 79, unit: "%" },
-        { label: "系统总效率", valAC: 50, valEC: 71, unit: "%" }
+        { label: "系统总效率", valAC: 50, valEC: 72, unit: "%" }
       ]
     },
     cases: {
-      title: "部分案例数据展示",
+      title: "部分项目案例",
+      savingsLabel: "节能率",
       items: [
         {
           client: "长鑫存储",
           location: "合肥",
-          savings: "43%",
-          powerRed: "10.9kW → 6.2kW"
+          savings: "32%"
         },
         {
           client: "阳光电源",
           location: "合肥",
-          savings: "52%",
-          powerRed: "12.5kW → 5.9kW"
+          savings: "30%"
         },
         {
           client: "联合利华",
           location: "合肥",
-          savings: "30%",
-          powerRed: "28.9kW → 20.3kW"
+          savings: "49%"
         }
       ]
-    },
-    partners: {
-      title: "战略合作品牌",
-      desc: "与国际一线品牌深度合作，确保核心部件品质。"
     },
     contact: {
       title: "联系我们",
@@ -107,7 +101,7 @@ export const content: Record<'zh' | 'en', ContentData> = {
       manager: "史工",
       phoneLabel: "手机",
       phone: "189 5321 5158",
-      qrAlt: "扫码添加，定制方案"
+      qrAlt: "添加工程师微信\n了解更多信息"
     }
   },
   en: {
@@ -120,13 +114,13 @@ export const content: Record<'zh' | 'en', ContentData> = {
     },
     hero: {
       title: "Zhongyuan Energy Conservation",
-      subtitle: "Leader in EC Fan Energy Saving Renovation & Comprehensive Energy Solutions",
+      subtitle: "Leader in EC Fan Energy Saving Renovation",
       cta: "Explore Solutions"
     },
     about: {
       title: "About Us",
-      description: "Anhui Zhongyuan Smart Energy Conservation Technology Co., Ltd. is the sole provider in Anhui focusing on EC fan renovation for air handling units. Pioneered in Shanghai and expanded to Anhui, we serve cleanrooms (Semicon, Battery), commercial offices, and public infrastructure.",
-      tags: ["Sole Provider in Anhui", "Multi-Industry", "Pioneered in Shanghai", "Top Tier Clients"]
+      description: "Zhongyuan Energy Conservation is the sole energy service provider in Anhui specializing in EC fan renovation for air handling units. After being verified and promoted in Shanghai by our shareholders, the company was established in Hefei to serve the Anhui region, partnering with multiple leading enterprises.",
+      tags: ["Sole Provider in Anhui", "Multi-Industry", "Leading Domestic Tech", "Top Tier Clients"]
     },
     features: {
       title: "Key Advantages",
@@ -159,48 +153,42 @@ export const content: Record<'zh' | 'en', ContentData> = {
       acTitle: "Traditional AC Fan",
       ecTitle: "New Gen EC Fan",
       acDesc: [
-        "Asynchronous Induction Motor (<87% Eff)",
-        "VSD required, poor low-speed efficiency",
-        "Belt drive, high maintenance, dust pollution"
+        "Asynchronous Induction Motor, low efficiency & average life",
+        "VFD dependent, significant efficiency drop at low speeds",
+        "Complex transmission, high failure rate, needs regular maintenance"
       ],
       ecDesc: [
-        "Permanent Magnet Sync Motor (>90% Eff)",
-        "Built-in controller, 10-100% stepless speed",
-        "Brushless design, long life, maintenance-free"
+        "Brushless DC PMSM, high efficiency & long life",
+        "Built-in speed control, 10-100% stepless regulation",
+        "External rotor motor direct drive, transmission-free"
       ],
       comparison: [
         { label: "Motor Efficiency", valAC: 87, valEC: 93, unit: "%" },
         { label: "Drive Efficiency", valAC: 95, valEC: 100, unit: "%" },
         { label: "Impeller Efficiency", valAC: 60, valEC: 79, unit: "%" },
-        { label: "System Efficiency", valAC: 50, valEC: 71, unit: "%" }
+        { label: "System Efficiency", valAC: 50, valEC: 72, unit: "%" }
       ]
     },
     cases: {
-      title: "Selected Case Data",
+      title: "Selected Projects",
+      savingsLabel: "Savings",
       items: [
         {
           client: "Changxin Memory (CXMT)",
           location: "Hefei",
-          savings: "43%",
-          powerRed: "10.9kW → 6.2kW"
+          savings: "32%"
         },
         {
           client: "Sungrow",
           location: "Hefei",
-          savings: "52%",
-          powerRed: "12.5kW → 5.9kW"
+          savings: "30%"
         },
         {
           client: "Unilever",
           location: "Hefei",
-          savings: "30%",
-          powerRed: "28.9kW → 20.3kW"
+          savings: "49%"
         }
       ]
-    },
-    partners: {
-      title: "Strategic Partners",
-      desc: "Deep cooperation with top international brands."
     },
     contact: {
       title: "Contact Us",
@@ -216,7 +204,7 @@ export const content: Record<'zh' | 'en', ContentData> = {
       manager: "Eng. Shi",
       phoneLabel: "Mobile",
       phone: "+86 189 5321 5158",
-      qrAlt: "Scan to Customize"
+      qrAlt: "Add Engineer WeChat\nfor more info"
     }
   }
 };

@@ -14,7 +14,6 @@ const Products: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <Reveal width="100%">
-            <h2 className="text-sm font-bold text-blue-600 uppercase tracking-wide mb-2">{t.features.title}</h2>
             <h3 className="text-3xl font-bold text-gray-900">{t.features.subtitle}</h3>
           </Reveal>
         </div>

@@ -42,16 +42,12 @@ export interface ContentData {
   };
   cases: {
     title: string;
+    savingsLabel: string;
     items: {
       client: string;
       location: string;
       savings: string;
-      powerRed: string;
     }[];
-  };
-  partners: {
-    title: string;
-    desc: string;
   };
   contact: {
     title: string;

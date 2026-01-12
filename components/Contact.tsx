@@ -29,28 +29,30 @@ const Contact: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
           {/* Brand - Spans 2 columns on desktop */}
-          <div className="lg:col-span-2">
-             <div className="flex items-center gap-2 mb-6">
-                {!imgError ? (
-                  <img 
-                    src="https://drive.google.com/thumbnail?id=1iPkIKtJDABtNZ6a1lus8NeEVU-ZPB9v7&sz=w1000" 
-                    alt="Logo" 
-                    className="h-8 w-auto object-contain"
-                    onError={() => setImgError(true)}
-                  />
-                ) : (
-                  <div className="h-8 w-8 rounded-lg bg-blue-600 flex items-center justify-center">
-                    <div className="w-4 h-4 bg-white rounded-full"></div>
-                  </div>
-                )}
-                <span className="text-2xl font-bold">中源节能</span>
+          <div className="lg:col-span-2 flex flex-col h-full">
+             <div>
+               <div className="flex items-center gap-2 mb-6">
+                  {!imgError ? (
+                    <img 
+                      src="https://drive.google.com/thumbnail?id=1iPkIKtJDABtNZ6a1lus8NeEVU-ZPB9v7&sz=w1000" 
+                      alt="Logo" 
+                      className="h-8 w-auto object-contain"
+                      onError={() => setImgError(true)}
+                    />
+                  ) : (
+                    <div className="h-8 w-8 rounded-lg bg-blue-600 flex items-center justify-center">
+                      <div className="w-4 h-4 bg-white rounded-full"></div>
+                    </div>
+                  )}
+                  <span className="text-2xl font-bold">中源节能</span>
+               </div>
+               <p className="text-gray-400 max-w-md mb-8 text-base">
+                 {t.hero.subtitle}
+               </p>
              </div>
-             <p className="text-gray-400 max-w-md mb-8 text-base">
-               {t.hero.subtitle}
-             </p>
 
-             {/* QR Code Section moved here */}
-             <div className="flex flex-col gap-3">
+             {/* QR Code Section moved here - mt-auto pushes it to the bottom to align with Email */}
+             <div className="flex flex-col gap-3 mt-auto">
                <div className="bg-white p-1 rounded-lg w-fit">
                  <img 
                    src="https://drive.google.com/thumbnail?id=1Q7w_ka_LRvhpUxFAJgf4-LG-MEdSa94s&sz=w500" 
@@ -58,7 +60,7 @@ const Contact: React.FC = () => {
                    className="w-32 h-32"
                  />
                </div>
-               <p className="text-sm text-gray-400 ml-1">{t.customization.qrAlt}</p>
+               <p className="text-sm text-gray-400 ml-1 whitespace-pre-line">{t.customization.qrAlt}</p>
              </div>
           </div>
 
