@@ -18,7 +18,7 @@ const About: React.FC = () => {
               <img 
                 src="/about.jpg" 
                 alt="Office Building" 
-                className="rounded-xl shadow-2xl w-full h-auto"
+                className="rounded-xl shadow-2xl"
               />
               {/* Overlay box removed */}
             </div>
