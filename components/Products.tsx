@@ -22,12 +22,17 @@ const Products: React.FC = () => {
         <div className="mb-20">
           <Reveal width="100%">
             <div className="relative w-full max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl bg-gray-900 aspect-video ring-4 ring-white">
-              <iframe 
-                src="https://drive.google.com/file/d/1zvSFVaks5aIfv2bH8JkGCefD_p_GvQoe/preview" 
-                className="w-full h-full border-0"
-                allow="autoplay; fullscreen"
-                title="Product Demonstration"
-              />
+              <video 
+                className="w-full h-full object-cover"
+                controls
+                muted
+                loop
+                playsInline
+                poster="/video-poster.jpg"
+              >
+                <source src="/video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </Reveal>
         </div>

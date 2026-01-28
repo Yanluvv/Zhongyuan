@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
           <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer">
             {!imgError ? (
               <img 
-                src="https://drive.google.com/thumbnail?id=1iPkIKtJDABtNZ6a1lus8NeEVU-ZPB9v7&sz=w1000" 
+                src="/logo.png" 
                 alt="Logo" 
                 className="h-10 w-auto object-contain"
                 onError={() => setImgError(true)}

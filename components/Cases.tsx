@@ -18,17 +18,19 @@ const Cases: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {t.cases.items.map((item, index) => {
             // Determine image source based on index
-            let imageSrc = `https://picsum.photos/seed/${index + 40}/600/800`; // Default fallback
+            let imageSrc = ""; 
             
             if (index === 0) {
               // Changxin Memory
-              imageSrc = "https://drive.google.com/thumbnail?id=1kVpfk6rT4vU6Mzd8uu3nRv0ICtxuq5hk&sz=w1000";
+              imageSrc = "/cases/changxin.jpg";
             } else if (index === 1) {
               // Sungrow
-              imageSrc = "https://drive.google.com/thumbnail?id=1kocGVh1vj_Tq_-FBL9T9f7UkgIWF-DMS&sz=w1000";
+              imageSrc = "/cases/sungrow.jpg";
             } else if (index === 2) {
               // Unilever
-              imageSrc = "https://drive.google.com/thumbnail?id=178T502SoJySIt9pfyMdEdy8AtjsYEGTn&sz=w1000";
+              imageSrc = "/cases/unilever.jpg";
+            } else {
+               imageSrc = `/cases/default.jpg`;
             }
 
             return (
