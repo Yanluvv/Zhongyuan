@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: 'url("/hero-bg.svg")',
+          backgroundImage: 'url("/hero-bg.jpg")',
         }}
       >
         {/* Reduced opacity from 90/80 to 60/50 to make background clearer */}

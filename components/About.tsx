@@ -16,7 +16,7 @@ const About: React.FC = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-blue-100 rounded-xl transform rotate-3 -z-10" />
               <img 
-                src="/about.svg" 
+                src="/about.jpg" 
                 alt="Office Building" 
                 className="rounded-xl shadow-2xl w-full h-auto"
               />

@@ -28,7 +28,7 @@ const Products: React.FC = () => {
                 muted
                 loop
                 playsInline
-                poster="/video-poster.svg"
+                poster="/video-poster.jpg"
               >
                 <source src="/video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
