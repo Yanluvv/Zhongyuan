@@ -22,15 +22,15 @@ const Cases: React.FC = () => {
             
             if (index === 0) {
               // Changxin Memory
-              imageSrc = "/cases/changxin.jpg";
+              imageSrc = "/cases/changxin.svg";
             } else if (index === 1) {
               // Sungrow
-              imageSrc = "/cases/sungrow.jpg";
+              imageSrc = "/cases/sungrow.svg";
             } else if (index === 2) {
               // Unilever
-              imageSrc = "/cases/unilever.jpg";
+              imageSrc = "/cases/unilever.svg";
             } else {
-               imageSrc = `/cases/default.jpg`;
+               imageSrc = `/cases/default.svg`;
             }
 
             return (

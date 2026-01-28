@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
                <div className="flex items-center gap-2 mb-6">
                   {!imgError ? (
                     <img 
-                      src="/logo.png" 
+                      src="/logo.svg" 
                       alt="Logo" 
                       className="h-8 w-auto object-contain"
                       onError={() => setImgError(true)}
@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
              <div className="flex flex-col gap-3 mt-auto">
                <div className="bg-white p-1 rounded-lg w-fit">
                  <img 
-                   src="/qrcode.png" 
+                   src="/qrcode.svg" 
                    alt={t.customization.qrAlt}
                    className="w-32 h-32"
                  />
